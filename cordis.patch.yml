@@ -1,0 +1,4 @@
+# project-handoff bundle patch: registers the skill with DSH.
+- insert:
+    - id: project-handoff
+      name: 'project-handoff'

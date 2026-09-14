@@ -1,0 +1,15 @@
+{
+  "name": "project-handoff",
+  "version": "0.1.0",
+  "description": "Project handoff skill: a dated handoff.md per project \u2014 current state, decisions with reasons, pitfalls as symptom/cause/fix, actionable next steps \u2014 so any fresh session resumes without archaeology. Bilingual EN/CN.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChenneyZhuang/project-handoff.git"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

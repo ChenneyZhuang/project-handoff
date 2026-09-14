@@ -1,0 +1,54 @@
+# project-handoff 项目交接
+
+Make the next session as smart as this one: a dated handoff file that carries current state, decisions with their reasons, and pitfalls as symptom → cause → fix.
+
+让下一个会话和这一个一样聪明：一份带日期的交接文件，装着现状、带理由的决策、和写成"症状→原因→对策"的坑。
+
+## Why / 为什么
+
+Long projects die in chat history: context that matters lives in messages that scroll away, get compressed, or belong to a session that has ended. `handoff` — one of the most-installed agent skills (797k+ installs) — exists because almost everyone hits this. This skill is the same discipline, bilingual and with a stricter pitfall format.
+
+长项目死在聊天记录里：关键上下文住在会滚走、被压缩、或属于已结束会话的消息中。`handoff` 是安装量最高的 agent skill 之一（79.7 万+），因为几乎人人都会撞上。这个 skill 是同一纪律的双语版，坑的格式更严格。
+
+## The handoff file / 交接文件长什么样
+
+```markdown
+# Project X — handoff
+
+## Current state (dated)
+- what exists, counts, paths, versions — verifiable claims only
+
+## Next steps (dated, actionable)
+1. the next concrete action
+
+## Decisions (why attached)
+- Use X because Y; rejected Z — so nobody relitigates
+
+## Pitfalls (symptom → cause → fix)
+- `error text` → the real cause → the fix that worked
+```
+
+## The discipline / 纪律
+
+1. **Read before you build.** Starting work on an existing project means reading the handoff first — and verifying its claims against reality, correcting stale lines in place.
+2. **Update when it lands.** Milestone, decision, pitfall — written immediately, not "at the end of the day". A stale handoff is a rumor.
+3. **Pitfalls are the payload.** The most valuable lines save the next session from a known trap; symptom → cause → fix is the format that survives being read three weeks later.
+4. **Decisions carry their why.** "Use X" is a fact; "Use X because Y" is a decision the next session can respect or consciously revisit.
+5. **Sensitive facts stay out.** The handoff may be synced or shared; credentials and personal details live in dedicated stores, and the handoff points at where.
+6. **Date everything.** Every entry carries a date so the reader can judge staleness.
+
+## Live test (2026-09-14) / 实测
+
+The discipline was applied to a real cross-session project: the handoff file carried 3 architecture generations and 15+ decisions across 4 working sessions; the onboarding audit it enabled found a missing "run it" section — which was fixed the same hour. New sessions resumed from the file alone, zero archaeology.
+
+该纪律已在一个真实跨会话项目上应用：handoff 文件承载了 3 代架构演进与 15+ 条决策，横跨 4 个工作会话；基于它的上手审计发现缺失的"怎么跑起来"一节——当小时修复。新会话仅凭文件即可续作，零考古。
+
+## Install / 安装
+
+```bash
+npx skills add ChenneyZhuang/project-handoff
+```
+
+Per-agent paths: [COMPATIBILITY.md](COMPATIBILITY.md). MIT. v0.1.0 — live-tested.
+
+各 agent 安装路径见 COMPATIBILITY.md。MIT 许可，v0.1.0，实测通过。
