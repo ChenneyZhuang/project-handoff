@@ -10,6 +10,12 @@ Long projects die in chat history: context that matters lives in messages that s
 
 长项目死在聊天记录里：关键上下文住在会滚走、被压缩、或属于已结束会话的消息中。`handoff` 是安装量最高的 agent skill 之一（79.7 万+），因为几乎人人都会撞上。这个 skill 是同一纪律的双语版，坑的格式更严格。
 
+## How it differs from conversation-compaction handoffs / 与"对话压缩交接"的区别
+
+Popular handoff skills (e.g. mattpocock's, 790k+ installs) compact the *current conversation* into a temp-directory document for the next agent session. That solves session-to-session continuity. This skill solves a different problem: a **persistent, version-controlled handoff.md living in the project itself** — accumulating decisions and pitfalls across weeks, readable by humans and agents, surviving even when no conversation produced it. Use both together if you like; they compose.
+
+流行的 handoff skill（如 mattpocock 的，79 万+安装）把*当前对话*压缩成临时目录的交接文档，解决会话到会话的连续性。这个 skill 解决的是另一个问题：**住在项目里的、可版本控制的持久 handoff.md**——跨周积累决策与坑，人和 agent 都能读，即使没有对话产生它也存在。两者可以同时用，互不冲突。
+
 ## The handoff file / 交接文件长什么样
 
 ```markdown
