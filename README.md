@@ -49,6 +49,14 @@ The discipline was applied to a real cross-session project: the handoff file car
 
 该纪律已在一个真实跨会话项目上应用：handoff 文件承载了 3 代架构演进与 15+ 条决策，横跨 4 个工作会话；基于它的上手审计发现缺失的"怎么跑起来"一节——当小时修复。新会话仅凭文件即可续作，零考古。
 
+## Honest limitations / 如实说明局限
+
+- A handoff file records what was true when written; stale entries mislead as easily as missing ones — the dated entries and the read-verify step exist for this, and a pack older than the last big change deserves distrust.
+- It is not a substitute for version control: code history lives in git; the handoff carries only what git cannot (decisions, reasons, unwritten rules).
+- Solo short-lived projects may never need one; the discipline pays off on anything spanning multiple sessions or people.
+
+交接文件记录的是写入时刻的事实；过期条目和缺失条目一样会误导——所以有日期戳和"读时核验"步骤，日期早于最近大变更的文件应被怀疑。它不能替代版本控制：代码历史归 git，handoff 只装 git 装不了的（决策、理由、潜规则）。单人短周期项目可能用不上；跨会话或跨人的项目才见效。
+
 ## Install / 安装
 
 ```bash
