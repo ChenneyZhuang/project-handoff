@@ -1,0 +1,23 @@
+{
+  "skill_name": "project-handoff",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我下个月要休假，给这个项目写个 handoff 文件，接手的人要能直接续上",
+      "expected_output": "A handoff.md at the project root with dated entries, a how-to-run section near the top, decisions with reasons, and current state — a fresh reader could continue from it without archaeology.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "new session starts on this repo tomorrow — make sure the handoff file reflects what we changed today",
+      "expected_output": "The existing handoff updated with today's changes as dated entries, stale entries corrected or superseded, nothing silently left contradictory.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "帮我把之前的工作整理成交接文档",
+      "expected_output": "A handoff document with the skill's required sections (run instructions, decisions, state, gotchas) and per-entry dates; generic 'contact me' lines replaced with written context.",
+      "files": []
+    }
+  ]
+}

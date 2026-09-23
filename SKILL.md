@@ -17,6 +17,10 @@ metadata:
 
 # Project Handoff: make the next session as smart as this one
 
+## When to use
+
+Use when a project spans multiple sessions or people: before a break, after a major change, when starting a new session on an old project, or when someone new takes over. Not for daily standup notes or task lists.
+
 Long projects die in chat history: the context that matters lives in messages
 that scroll away, get compressed, or belong to a session that has since ended.
 A handoff file is the project's memory on disk — one markdown file the next
@@ -76,3 +80,9 @@ session reads first and this session updates last.
 The handoff exists, matches reality, carries the session's new knowledge
 (decisions with reasons, pitfalls, current state), and leaves the next
 session an actionable, dated starting point.
+
+## Gotchas / 常见坑
+
+- Entries without dates go stale silently — a handoff line older than the last major change deserves distrust.
+- The most-missing section is how to run the thing (verified in a real audit); a new session dies on this first, so put it near the top.
+- A handoff is not version control: record decisions, reasons, and unwritten rules — git already holds the diffs.
